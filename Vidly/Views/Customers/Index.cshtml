@@ -20,7 +20,7 @@
 
 
 
-<table id="customers" class="table table-bordered table-hover">
+<table name ="CustomerTable" id="customers" class="table table-striped">
     <thead>
         <tr>
             <th>Customer</th>
@@ -32,7 +32,7 @@
        @foreach (var s in Model.Customers)
        {
         <tr>
-            <td>@Html.ActionLink(s.Name, "Details", "Customers",new { id = s.Id}, null)</td>
+            <td>@Html.ActionLink(s.Name, "Edit", "Customers",new { id = s.Id}, null)</td>
             <td>@s.MembershipType.name</td>
         </tr>
        }
