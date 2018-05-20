@@ -235,6 +235,14 @@
     <Compile Include="Migrations\201805200636180_GenretypeIDSpellingCorrection.Designer.cs">
       <DependentUpon>201805200636180_GenretypeIDSpellingCorrection.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805201825141_EditedMovieModel.cs" />
+    <Compile Include="Migrations\201805201825141_EditedMovieModel.Designer.cs">
+      <DependentUpon>201805201825141_EditedMovieModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805201925497_AddedNumberInStockRule.cs" />
+    <Compile Include="Migrations\201805201925497_AddedNumberInStockRule.Designer.cs">
+      <DependentUpon>201805201925497_AddedNumberInStockRule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -373,6 +381,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805200636180_GenretypeIDSpellingCorrection.resx">
       <DependentUpon>201805200636180_GenretypeIDSpellingCorrection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805201825141_EditedMovieModel.resx">
+      <DependentUpon>201805201825141_EditedMovieModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805201925497_AddedNumberInStockRule.resx">
+      <DependentUpon>201805201925497_AddedNumberInStockRule.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
