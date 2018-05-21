@@ -22,7 +22,7 @@ namespace Vidly.Dtos
         public byte MembershipTypeId { get; set; }
 
         [Column(TypeName = "Date")]
-        [Min18YearsIfAMember]
+      //  [Min18YearsIfAMember]
         public DateTime? Birthday { get; set; }
     }
 }
