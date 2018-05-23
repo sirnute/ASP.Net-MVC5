@@ -21,6 +21,10 @@ namespace Vidly.Dtos
 
         public byte MembershipTypeId { get; set; }
 
+        public MembershipTypeDto MembershipType { get; set; }
+
+
+
         [Column(TypeName = "Date")]
       //  [Min18YearsIfAMember]
         public DateTime? Birthday { get; set; }
