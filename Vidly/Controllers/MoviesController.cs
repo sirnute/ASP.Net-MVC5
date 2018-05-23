@@ -26,16 +26,7 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
-            var movies = _context.Movies.Include(M => M.GenreType).ToList();
-
-
-
-            var ViewModel = new RandomMovieViewModel
-            {
-                Movies = movies
-            };
-
-            return View(ViewModel);
+            return View();
         }
 
 

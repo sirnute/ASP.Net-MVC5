@@ -28,6 +28,8 @@ namespace Vidly.App_Start
 
             //Dto to Domain
             Mapper.CreateMap<MovieDto, Movie>().ForMember(m => m.ID, opt => opt.Ignore());
+            //Domain to Dto
+            Mapper.CreateMap<GenreType, GenreTypeDto>();
         }
     }
 }
