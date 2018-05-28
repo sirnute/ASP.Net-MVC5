@@ -10,6 +10,7 @@ using System.Data.Entity.Validation;
 
 namespace Vidly.Controllers
 {
+    [Authorize(Roles = RoleName.canManageMovies)]
     public class MoviesController : Controller
     {
         private ApplicationDbContext _context;
@@ -24,6 +25,7 @@ namespace Vidly.Controllers
             _context.Dispose();
         }
 
+        [AllowAnonymous]
         public ActionResult Index()
         {
             if (User.IsInRole(RoleName.canManageMovies))
@@ -63,7 +65,7 @@ namespace Vidly.Controllers
             return View(ViewModel);
         }
 
-        [Authorize(Roles = RoleName.canManageMovies)]
+        //[Authorize(Roles = RoleName.canManageMovies)]
         public ActionResult New()
         {
             var genreTypes = _context.GenreTypes.ToList();

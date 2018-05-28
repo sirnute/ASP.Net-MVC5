@@ -11,6 +11,8 @@ namespace Vidly
             filters.Add(new HandleErrorAttribute());
             //Ensures only authorized logins can access functions of the app
             filters.Add(new AuthorizeAttribute());
+            //Ensures the app starts on a secure channel / site
+            filters.Add(new RequireHttpsAttribute());
         }
     }
 }
