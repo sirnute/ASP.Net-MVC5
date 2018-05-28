@@ -9,7 +9,7 @@ using System.Data.Entity;
 
 namespace Vidly.Controllers
 {
-  
+    
     public class CustomersController : Controller
     {
         private ApplicationDbContext _context;
